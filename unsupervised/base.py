@@ -1,13 +1,22 @@
-# contains the base class. 
+"""
+Base class for unsupervised learning.
+"""
 
-class Algorithm():
-    # DO NOT confuse this with the Algorithm() class from supervised/base.py
+
+class Unsupervised():
+    """
+    Not the same as supervised/base.py/Algorithm
+    You can also add evaluate()
+    """
+
     def __init__(self) -> None:
-        # takes in whatever parameters are needed
-        pass
-    def fit_predict(self, X_train): 
-        # in unsupervised learning, you never take labels (you make the labels)
-        raise NotImplementedError()
+        """
+        Take arguments here.
+        """
 
-    # some unsupervised algorithms also have an evaluate() method 
-    # so you can add that too. 
+    def fit_predict(self, X_train): 
+        """
+        Generates labels.
+        Never take labels in unsupervised learning.
+        """
+        raise NotImplementedError()
