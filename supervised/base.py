@@ -3,7 +3,7 @@ Base class for supervised learning.
 """
 
 
-class Algorithm():
+class Supervised():
     """
     Inherit and implement __init__, fit, predict, and evaluate.
     """

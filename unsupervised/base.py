@@ -3,7 +3,7 @@ Base class for unsupervised learning.
 """
 
 
-class Algorithm():
+class Unsupervised():
     """
     Not the same as supervised/base.py/Algorithm
     You can also add evaluate()
