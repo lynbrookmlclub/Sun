@@ -1,18 +1,32 @@
-# contains the base class. 
+"""
+Base class for supervised learning.
+"""
+
 
 class Algorithm():
+    """
+    Inherit and implement __init__, fit, predict, and evaluate.
+    """
+
     def __init__(self) -> None:
-        # takes in whatever parameters are needed
-        pass
+        """
+        Takes in whatever parameters are needed.
+        """
+
     def fit(self, X_train, y_train):
-        # this is where the model should be trained based on this data 
+        """
+        This is where the model should be trained based on the data.
+        """
         raise NotImplementedError
 
     def predict(self, X_test): 
-        # here you should use what was learnt to make predictions about X_test
-        raise NotImplementedError
-    def evaluate(self, X_test, y_test): 
-        # this is where the model's predictions should be evaluated 
+        """
+        Give predicted output from input.
+        """
         raise NotImplementedError
 
-# In short, the __init__(), fit(), predict(), and evaluate() method all need to be written. 
+    def evaluate(self, X_test, y_test): 
+        """
+        Evaluate how good the predictions are.
+        """
+        raise NotImplementedError
