@@ -1,0 +1,17 @@
+numpy
+joblib
+pandas
+scipy
+tqdm
+multiprocess
+seaborn
+Cython
+setuptools
+matplotlib
+dill
+pytz
+cycler
+pillow
+kiwisolver
+pyparsing
+six
